@@ -1,0 +1,33 @@
+{
+    "start" : {
+        "type" : "START",
+        "comment" : "Start of the program",
+        "next" : "step1"
+    },
+    "step1" : {
+        "type" : "INPUT",
+        "message" : "Ingrese un numero: ",
+        "var" : "num1",
+        "type_var" : "int",
+        "comment" : "",
+        "next" : "step2"
+    },
+    "step2" : {
+        "type" : "INPUT",
+        "message" : "Ingrese otro numero: ",
+        "var" : "num2",
+        "type_var" : "int",
+        "comment" : "",
+        "next" : "step3"
+    },
+    "step3": {
+        "type" : "DEBUG",
+        "command" : "print_all_vars",
+        "next" : "end"
+    },
+    "end" : {
+        "type" : "END",
+        "comment" : "End of the program",
+        "next" : null
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "START" : {
+        "type" : "start",
+        "description" : "It is used to declare the start of the algorithm",
+        "shape" : "oval"
+    },
+    "END" : {
+        "type" : "end",
+        "description" : "It is used to declare the end of the algorithm.",
+        "shape" : "oval"
+    },
+    "INPUT" : {
+        "type" : "input",
+        "description" : "Used to get keyboard data",
+        "shape" : "tilted rectangle"
+    },
+    "OUTPUT" : {
+        "type" : "output",
+        "description" : "It is used to display data on the console",
+        "shape" : "tilted rectangle",
+        "msg" : ""
+    },
+    "CONDITONAL" : {
+        "type" : "conditional",
+        "description" : "Used to declare conditions",
+        "shape" : "diamond",
+        "condition" : "",
+        "true" : "",
+        "false" : ""
+    },
+    "EXECUTE" : {
+        "type" : "execute",
+        "description" : "It is used to execute a function in a cmd or terminal",
+        "shape" : "rectangle with double lines",
+        "function" : ""
+    },
+    "OPERATION" : {
+        "type" : "OPERATION",
+        "description" : "It is used to declare variables and perform operations",
+        "shape" : "rectangle",
+        "operation" : ""
+    }
+}

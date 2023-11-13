@@ -1,0 +1,45 @@
+{
+    "start" : {
+        "type" : "START",
+        "comment" : "Start of the program",
+        "next" : "step1"
+    },
+    "step1" : {
+        "type" : "OUTPUT",
+        "message" : "Hola, Mundo!",
+        "comment" : "",
+        "next" : "step2"
+    },
+    "step2" : {
+        "type" : "INPUT",
+        "message" : "Ingrese un numero: ",
+        "var" : "numero",
+        "type_var" : "int",
+        "comment" : "",
+        "next" : "step3"
+    },
+    "step3" : {
+        "type" : "EXECUTE",
+        "command" : "cls",
+        "comment" : "",
+        "next" : "step4"
+    },
+    "step4" : {
+        "type" : "ASIGNATION",
+        "var" : "variable2",
+        "type_var" : "int",
+        "value" : 0,
+        "comment" : "",
+        "next" : "step5"
+    },
+    "step5" : {
+        "type" : "DEBUG",
+        "command" : "print_all_vars",
+        "next" : "end"
+    },
+    "end" : {
+        "type" : "END",
+        "comment" : "End of the program",
+        "next" : null
+    }
+}
