@@ -53,7 +53,7 @@ if __name__ == '__main__':
             interpreter_vars.update(new_var_reserv)
 
         elif step_type == 'OUTPUT':
-            print(step_data['message'])
+            print(step_data['message'], interpreter_vars[step_data['var']])
 
         elif step_type == 'LOOP':
             print("Loop")
@@ -64,6 +64,18 @@ if __name__ == '__main__':
             new_var_reserv = {
                 step_data['var'] : {
                     'value' : step_data['value'],
+                    'type' : step_data['type_var']
+                }
+            }
+
+            interpreter_vars.update(new_var_reserv)
+
+        elif step_type == 'OPERATION':
+            print("operation")
+
+            new_var_reserv = {
+                step_data['var'] : {
+                    'value' : eval(step_data['ope']),
                     'type' : step_data['type_var']
                 }
             }

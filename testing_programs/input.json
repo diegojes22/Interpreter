@@ -21,8 +21,18 @@
         "next" : "step3"
     },
     "step3": {
-        "type" : "DEBUG",
-        "command" : "print_all_vars",
+        "type" : "OPERATION",
+        "var" : "suma",
+        "type_var" : "int",
+        "ope" : "5 + 2",
+        "comment" : "",
+        "next" : "step4"
+    },
+    "step4": {
+        "type" : "OUTPUT",
+        "message" : "La suma es: ",
+        "var" : "suma",
+        "comment" : "",
         "next" : "end"
     },
     "end" : {
